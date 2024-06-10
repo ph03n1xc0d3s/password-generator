@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <title>Random Password Generator</title>
+  </head>
+  <body>
+    <header class="container-fluid bg-dark">
+        <div class="d-flex align-items-center justify-content-center">
+            <p class="mt-3 text-danger">This is developed by ph03n1xc0d3s</p>
+        </div>
+    </header>
+    <div
+      class="container-fluid section-height text-light d-flex flex-column justify-content-center align-items-start"
+    >
+      <div class="container">
+        <div
+          class="page-title d-flex justify-content-center align-items-end gap-3"
+        >
+          <h1 class="mt-4">Random Passoword Generator</h1>
+          <span style="font-size: 40px" class="material-symbols-outlined">
+            password
+          </span>
+        </div>
+        <div class="text-center">
+          <span class="text-info fs-5">by ph03n1xc0d3s</span>
+        </div>
+        <div class="section-heading">
+          <div class="mb-3">
+            <label id="passwordLabel" for="length" class="form-label"
+              >Password length</label
+            >
+            <input type="text" class="form-control" id="length" />
+          </div>
+          <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="special_char" />
+            <label class="form-check-label" for="exampleCheck1"
+              >Special Characters</label
+            >
+          </div>
+          <button onclick="submit()" id="generate" class="btn btn-primary">
+            Generate Password
+          </button>
+        </div>
+      </div>
+      <div class="container password-container">
+        <div class="section-title">
+          <h6 class="mt-4">Password Generated</h6>
+          <input
+            type="text"
+            value=""
+            name="password"
+            class="form-control w-50 generatedPasswordField"
+          />
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&display=swap');
+
+body {
+    font-family: "Assistant", sans-serif !important;
+}
+
+.section-height {
+    height: 820px;
+    background: url('https://img.freepik.com/free-vector/gradient-abstract-wireframe-background_23-2149014186.jpg?t=st=1717982533~exp=1717986133~hmac=5f70ced4d40762e858090a34f515d5c24d47da228bcb0e0cbd959e5ddd5380b5&w=1060');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
